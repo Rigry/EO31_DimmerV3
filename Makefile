@@ -15,8 +15,9 @@ OBJCOPY :=$(CROSS)objcopy
 OBJDUMP :=$(CROSS)objdump
 
 
-SOURCES= main.c  ./usrlib/eeprom.c
-INCLUDES= . 
+SOURCES= main.c  
+SOURCES+= ./usrlib/eeprom.c
+INCLUDES= . ./usrlib
 
 
 OBJECTS=$(SOURCES:.cpp=.o)
